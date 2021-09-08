@@ -1,0 +1,17 @@
+{
+  "name": "atom/button",
+  "properties": {
+    "text": {
+      "type": "text",
+      "default": "Dit is een button"
+    },
+    "type": {
+      "type": "select",
+      "options": {
+        "primary": "Primary button",
+        "secondary": "Secondary button"
+      },
+      "default": "primary"
+    }
+  }
+}

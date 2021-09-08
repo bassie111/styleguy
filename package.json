@@ -1,0 +1,19 @@
+{
+  "name": "webpack-twig-styleguide",
+  "version": "0.0.1",
+  "description": "Generate styleguide for twig components",
+  "main": "index.js",
+  "author": "Bas Everaarts",
+  "license": "MIT",
+  "devDependencies": {
+    "twig": "^1.15.4",
+    "webpack": "^5.52.0"
+  },
+  "scripts": {
+    "demo": "webpack --mode=development --progress"
+  },
+  "packageManager": "yarn@3.0.2",
+  "dependencies": {
+    "webpack-cli": "^4.8.0"
+  }
+}

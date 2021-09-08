@@ -1,0 +1,17 @@
+{
+  "name": "atom/card",
+  "properties": {
+    "text": {
+      "type": "text",
+      "default": "Dit is een card"
+    },
+    "type": {
+      "type": "select",
+      "options": {
+        "primary": "Primary button",
+        "secondary": "Secondary button"
+      },
+      "default": "primary"
+    }
+  }
+}
