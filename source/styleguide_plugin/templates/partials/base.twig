@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="../assets/styleguide.js"></script>
+    <link href="../assets/styleguide.css" rel="stylesheet" media="all" type="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+    <div class="page">
+        <div class="page__logo">
+            <div class="logo"></div>
+        </div>
+        <div class="page__header">
+            <div class="header">
+                <h1 class="header__title">Styleguide</h1>
+            </div>
+        </div>
+        <div class="page__sidebar">
+            {% include 'menu.twig' %}
+        </div>
+        <div class="page__main">
+            <div class="main">
+                {% block main %}{% endblock %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

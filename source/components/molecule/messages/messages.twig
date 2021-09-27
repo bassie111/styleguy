@@ -1,0 +1,7 @@
+<div class="messages">
+    {% for message in messages %}
+        {% include '../../atom/message/message.twig' with {
+            text: message.text
+        } %}
+    {% endfor %}
+</div>

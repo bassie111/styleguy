@@ -13,5 +13,19 @@
       },
       "default": "primary"
     }
+  },
+  "variants": {
+    "primary": {
+      "properties": {
+        "text": "Primary button",
+        "type": "primary"
+      }
+    },
+    "secondary": {
+      "properties": {
+        "text": "Secondary button",
+        "type": "secondary"
+      }
+    }
   }
 }

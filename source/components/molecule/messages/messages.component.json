@@ -1,0 +1,10 @@
+{
+  "name": "molecule/messages",
+  "description": "This are the messages",
+  "properties": {
+    "messages": {
+      "type": "objects",
+      "default": [{"text": "Bericht 1"}, {"text": "Bericht 2"}]
+    }
+  }
+}

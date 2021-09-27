@@ -1,0 +1,30 @@
+{% extends 'partials/base.twig' %}
+{% block main %}
+    {% if componentData.config.variants %}
+        {% for variant_name,variant_config in componentData.config.variants %}
+            <div class="componentTitle">{{ variant_name }}</div>
+            <iframe class="componentFrame" src="components/{{ componentData.name|replace({'/' : '-'}) }}-{{ variant_name }}.html"></iframe>
+            {% if componentData.config.description %}
+                <div class="componentDescription">{{ componentData.config.description }}</div>
+            {% endif %}
+        {% endfor %}
+    {% else %}
+        <div class="componentTitle">{{ componentData.config.name }}</div>
+        <iframe class="componentFrame" src="components/{{ componentData.name|replace({'/' : '-'}) }}.html"></iframe>
+        {% if componentData.config.description %}
+            <div class="componentDescription">{{ componentData.config.description }}</div>
+        {% endif %}
+    {% endif %}
+
+    {% if componentData.config.properties %}
+        <div class="properties">
+            {% for property, property_settings in componentData.config.properties %}
+                <div class="property">
+                    <div class="property__name">{{ property_settings.name }}</div>
+                    <div class="property__type">{{ property_settings.type }}</div>
+                    <div class="property__default">{{ property_settings.default|default('none') }}</div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endblock %}

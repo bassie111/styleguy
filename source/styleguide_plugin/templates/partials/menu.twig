@@ -1,0 +1,14 @@
+<div class="componentMenu">
+    <ul>
+        {% for menu_item in menu %}
+            <li>
+                <a href="#">{{ menu_item.name }}</a>
+                <ul>
+                    {% for sub_item in menu_item.items %}
+                        <li><a href="{{ sub_item.path }}">{{ sub_item.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

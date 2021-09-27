@@ -1,0 +1,9 @@
+{
+  "name": "atom/message",
+  "properties": {
+    "text": {
+      "type": "text",
+      "default": "Dit is de default text"
+    }
+  }
+}

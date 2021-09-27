@@ -1,0 +1,25 @@
+.page {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content auto;
+  grid-template-columns: min-content auto;
+  grid-template-areas:
+    "logo header"
+    "sidebar main";
+
+  &__logo {
+    grid-area: logo;
+  }
+
+  &__sidebar {
+    grid-area: sidebar;
+  }
+
+  &__header {
+    grid-area: header;
+  }
+
+  &__main {
+    grid-area: main;
+  }
+}
